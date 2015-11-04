@@ -84,6 +84,13 @@
                             <constraint firstItem="qJs-TK-LHs" firstAttribute="bottom" secondItem="eFE-zW-gZr" secondAttribute="bottom" constant="100" id="ynL-2o-NfC"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="bottomTextField" destination="eFE-zW-gZr" id="JIT-iJ-K8I"/>
+                        <outlet property="cameraButton" destination="8eJ-xo-VRY" id="LAS-pr-FPN"/>
+                        <outlet property="imageView" destination="qJs-TK-LHs" id="Q7t-3X-LSz"/>
+                        <outlet property="shareButton" destination="TE1-U3-Khj" id="f4Z-pL-xvV"/>
+                        <outlet property="topTextField" destination="qbF-2P-kXN" id="sED-3a-GhX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
