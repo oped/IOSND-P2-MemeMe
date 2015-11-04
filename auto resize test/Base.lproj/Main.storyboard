@@ -29,9 +29,17 @@
                                 <items>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="oHg-xi-PwG"/>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="gdC-HF-Ynr"/>
-                                    <barButtonItem title="Item" systemItem="camera" id="8eJ-xo-VRY"/>
+                                    <barButtonItem title="Item" systemItem="camera" id="8eJ-xo-VRY">
+                                        <connections>
+                                            <action selector="getImageFromCamera:" destination="BYZ-38-t0r" id="P4K-m4-1aQ"/>
+                                        </connections>
+                                    </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="Ssa-z1-Slw"/>
-                                    <barButtonItem title="Album" id="9ut-zx-Df1"/>
+                                    <barButtonItem title="Album" id="9ut-zx-Df1">
+                                        <connections>
+                                            <action selector="getImageFromAlbum:" destination="BYZ-38-t0r" id="kg0-aa-Nhm"/>
+                                        </connections>
+                                    </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="g4s-jP-JUv"/>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="E7S-iz-s0k"/>
                                 </items>
@@ -43,11 +51,15 @@
                                 <color key="barTintColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <items>
                                     <navigationItem id="7IL-ZL-y0Q">
-                                        <barButtonItem key="leftBarButtonItem" systemItem="action" id="TE1-U3-Khj"/>
+                                        <barButtonItem key="leftBarButtonItem" systemItem="action" id="TE1-U3-Khj">
+                                            <connections>
+                                                <action selector="shareMeme:" destination="BYZ-38-t0r" id="Jt1-pq-qfe"/>
+                                            </connections>
+                                        </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" placeholder="TOP" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qbF-2P-kXN">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qbF-2P-kXN">
                                 <rect key="frame" x="20" y="120" width="560" height="30"/>
                                 <animations/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -55,7 +67,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="BOTTOM" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eFE-zW-gZr">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eFE-zW-gZr">
                                 <rect key="frame" x="20" y="470" width="560" height="30"/>
                                 <animations/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -86,9 +98,11 @@
                     </view>
                     <connections>
                         <outlet property="bottomTextField" destination="eFE-zW-gZr" id="JIT-iJ-K8I"/>
+                        <outlet property="bottomToolBar" destination="Wt5-CW-jsU" id="eZd-fN-Tzf"/>
                         <outlet property="cameraButton" destination="8eJ-xo-VRY" id="LAS-pr-FPN"/>
                         <outlet property="imageView" destination="qJs-TK-LHs" id="Q7t-3X-LSz"/>
                         <outlet property="shareButton" destination="TE1-U3-Khj" id="f4Z-pL-xvV"/>
+                        <outlet property="topNavigationBar" destination="GMa-5S-ygL" id="hsH-Ya-WNw"/>
                         <outlet property="topTextField" destination="qbF-2P-kXN" id="sED-3a-GhX"/>
                     </connections>
                 </viewController>
