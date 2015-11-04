@@ -38,7 +38,7 @@
 		FF2A92731BE98E58005AE710 = {
 			isa = PBXGroup;
 			children = (
-				FF2A927E1BE98E58005AE710 /* auto resize test */,
+				FF2A927E1BE98E58005AE710 /* MemeMe */,
 				FF2A927D1BE98E58005AE710 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -51,7 +51,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		FF2A927E1BE98E58005AE710 /* auto resize test */ = {
+		FF2A927E1BE98E58005AE710 /* MemeMe */ = {
 			isa = PBXGroup;
 			children = (
 				FF2A927F1BE98E58005AE710 /* AppDelegate.swift */,
@@ -61,6 +61,7 @@
 				FF2A92881BE98E58005AE710 /* LaunchScreen.storyboard */,
 				FF2A928B1BE98E58005AE710 /* Info.plist */,
 			);
+			name = MemeMe;
 			path = "auto resize test";
 			sourceTree = "<group>";
 		};
