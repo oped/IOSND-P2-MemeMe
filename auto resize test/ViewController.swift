@@ -19,7 +19,6 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
 	@IBOutlet weak var bottomToolBar: UIToolbar!
 	
 	@IBAction func getImageFromAlbum(sender: AnyObject) {
-		print(sender)
 		let imagePicker = UIImagePickerController()
 		imagePicker.delegate = self
 		imagePicker.sourceType = UIImagePickerControllerSourceType.PhotoLibrary
@@ -38,7 +37,6 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
 		(UIApplication.sharedApplication().delegate as! AppDelegate).memes.append(meme)
 		let activityViewController = UIActivityViewController(activityItems: objectsToShare as [AnyObject], applicationActivities: nil )
 		self.presentViewController(activityViewController, animated: true, completion: nil )
-		print((UIApplication.sharedApplication().delegate as! AppDelegate).memes)
 	}
 	
 	func generateMemedImage() -> UIImage {
@@ -76,11 +74,10 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
 	}
 	func setTextFieldProprties(textField: UITextField, text: String) {
 		let memeTextAttributes = [
-			NSStrokeColorAttributeName :  UIColor.blackColor(), //TODO: Fill in appropriate UIColor,
-			NSForegroundColorAttributeName : UIColor.whiteColor(), //TODO: Fill in UIColor,
+			NSStrokeColorAttributeName :  UIColor.blackColor(),
+			NSForegroundColorAttributeName : UIColor.whiteColor(),
 			NSFontAttributeName : UIFont(name: "HelveticaNeue-CondensedBlack", size: 40)!,
-			NSStrokeWidthAttributeName : -3.0 //TODO: Fill in appropriate Float
-			//TODO: BOLD ??
+			NSStrokeWidthAttributeName : -5.0 //TODO: Fill in appropriate Float
 		]
 		textField.delegate = self
 		textField.defaultTextAttributes = memeTextAttributes
@@ -117,10 +114,6 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
 		return true
 	}
 }
-
-
-
-
 struct Meme {
 	var topText : String!
 	var bottomText : String!
