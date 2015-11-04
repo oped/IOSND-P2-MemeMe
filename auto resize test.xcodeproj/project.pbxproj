@@ -284,6 +284,7 @@
 				FF2A92901BE98E58005AE710 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
