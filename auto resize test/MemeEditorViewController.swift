@@ -22,31 +22,35 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
 		let imagePicker = UIImagePickerController()
 		imagePicker.delegate = self
 		imagePicker.sourceType = UIImagePickerControllerSourceType.PhotoLibrary
-		self.presentViewController(imagePicker, animated: true, completion: nil)
+		presentViewController(imagePicker, animated: true, completion: nil)
 	}
 	
 	@IBAction func getImageFromCamera(sender: AnyObject) {
 		let imagePicker = UIImagePickerController()
 		imagePicker.delegate = self
 		imagePicker.sourceType = UIImagePickerControllerSourceType.Camera
-		self.presentViewController(imagePicker, animated: true, completion: nil)
+		presentViewController(imagePicker, animated: true, completion: nil)
 	}
 	
 	@IBAction func shareMeme(sender: AnyObject) {
 		let image: UIImage = generateMemedImage()
 		let objectsToShare = [image]
-		let meme = Meme( topText: self.topTextField.text!, bottomText: self.bottomTextField.text!, originalImage: self.imageView.image!, memedImage: image)
-		(UIApplication.sharedApplication().delegate as! AppDelegate).memes.append(meme)
+		let meme = Meme( topText: topTextField.text!, bottomText: bottomTextField.text!, originalImage: imageView.image!, memedImage: image)
 		let activityViewController = UIActivityViewController(activityItems: objectsToShare as [AnyObject], applicationActivities: nil )
+		activityViewController.completionWithItemsHandler = { (activityType: String?, completed: Bool, returnedItems: [AnyObject]?, activityError: NSError?) in
+			if completed {
+				(UIApplication.sharedApplication().delegate as! AppDelegate).memes.append(meme)
+			}
+		}
 		self.presentViewController(activityViewController, animated: true, completion: nil )
 	}
-	
+
 	func generateMemedImage() -> UIImage {
 		topNavigationBar.hidden = true
 		bottomToolBar.hidden = true
 		// render view to an image
-		UIGraphicsBeginImageContext(self.view.frame.size)
-		self.view.drawViewHierarchyInRect(self.view.frame, afterScreenUpdates: true)
+		UIGraphicsBeginImageContext(view.frame.size)
+		view.drawViewHierarchyInRect(view.frame, afterScreenUpdates: true)
 		let memedImage : UIImage = UIGraphicsGetImageFromCurrentImageContext()
 		UIGraphicsEndImageContext()
 		topNavigationBar.hidden = false
@@ -56,27 +60,27 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
 	
 	func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
 		if let image = info[UIImagePickerControllerOriginalImage] as? UIImage {
-			self.imageView.image = image
+			imageView.image = image
 			dismissViewControllerAnimated(true, completion: nil)
 		}
 	}
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
-		setTextFieldProprties(self.topTextField, text: "TOP")
-		setTextFieldProprties(self.bottomTextField, text: "BOTTOM")
+		setTextFieldProprties(topTextField, text: "TOP")
+		setTextFieldProprties(bottomTextField, text: "BOTTOM")
 	}
 	
 	override func viewWillDisappear(animated: Bool) {
 		super.viewWillDisappear(animated)
-		self.unsubscribeFromKeyboardNotifications()
+		unsubscribeFromKeyboardNotifications()
 	}
 	
 	override func viewWillAppear(animated: Bool) {
 		super.viewWillAppear(animated);
 		cameraButton.enabled = UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.Camera)
-		shareButton.enabled = self.imageView.image != nil
-		self.subscribeToKeyboardNotifications()
+		shareButton.enabled = imageView.image != nil
+		subscribeToKeyboardNotifications()
 	}
 	
 	func setTextFieldProprties(textField: UITextField, text: String) {
@@ -84,7 +88,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
 			NSStrokeColorAttributeName :  UIColor.blackColor(),
 			NSForegroundColorAttributeName : UIColor.whiteColor(),
 			NSFontAttributeName : UIFont(name: "HelveticaNeue-CondensedBlack", size: 40)!,
-			NSStrokeWidthAttributeName : -5.0 //TODO: Fill in appropriate Float
+			NSStrokeWidthAttributeName : -4.0
 		]
 		textField.delegate = self
 		textField.defaultTextAttributes = memeTextAttributes
@@ -104,12 +108,12 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
 	}
 	
 	func keyboardWillHide(notification: NSNotification) {
-		self.view.frame.origin.y = 0
+		view.frame.origin.y = 0
 	}
 	
 	func keyboardWillShow(notification: NSNotification) {
-		if self.bottomTextField.isFirstResponder() {
-			self.view.frame.origin.y -= getKeyboardHeight(notification)
+		if bottomTextField.isFirstResponder() {
+			view.frame.origin.y -= getKeyboardHeight(notification)
 		}
 	}
 	
