@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "FF2A927B1BE98E58005AE710"
-               BuildableName = "Project 2A - MemeMe - Meme Editor.app"
-               BlueprintName = "Project 2A - MemeMe - Meme Editor"
+               BuildableName = "Project 2A - MemeMe - Meme Editor.temp_caseinsensitive_rename.app"
+               BlueprintName = "Project 2A - MemeMe - Meme Editor.temp_caseinsensitive_rename"
                ReferencedContainer = "container:Project 2A - MemeMe - Meme Editor.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -33,8 +33,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "FF2A927B1BE98E58005AE710"
-            BuildableName = "Project 2A - MemeMe - Meme Editor.app"
-            BlueprintName = "Project 2A - MemeMe - Meme Editor"
+            BuildableName = "Project 2A - MemeMe - Meme Editor.temp_caseinsensitive_rename.app"
+            BlueprintName = "Project 2A - MemeMe - Meme Editor.temp_caseinsensitive_rename"
             ReferencedContainer = "container:Project 2A - MemeMe - Meme Editor.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -56,8 +56,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "FF2A927B1BE98E58005AE710"
-            BuildableName = "Project 2A - MemeMe - Meme Editor.app"
-            BlueprintName = "Project 2A - MemeMe - Meme Editor"
+            BuildableName = "Project 2A - MemeMe - Meme Editor.temp_caseinsensitive_rename.app"
+            BlueprintName = "Project 2A - MemeMe - Meme Editor.temp_caseinsensitive_rename"
             ReferencedContainer = "container:Project 2A - MemeMe - Meme Editor.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -75,8 +75,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "FF2A927B1BE98E58005AE710"
-            BuildableName = "Project 2A - MemeMe - Meme Editor.app"
-            BlueprintName = "Project 2A - MemeMe - Meme Editor"
+            BuildableName = "Project 2A - MemeMe - Meme Editor.temp_caseinsensitive_rename.app"
+            BlueprintName = "Project 2A - MemeMe - Meme Editor.temp_caseinsensitive_rename"
             ReferencedContainer = "container:Project 2A - MemeMe - Meme Editor.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>

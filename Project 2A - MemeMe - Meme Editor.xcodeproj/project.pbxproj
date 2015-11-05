@@ -15,7 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		FF2A927C1BE98E58005AE710 /* Project 2A - MemeMe - Meme Editor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Project 2A - MemeMe - Meme Editor.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF2A927C1BE98E58005AE710 /* Project 2A - MemeMe - Meme Editor.temp_caseinsensitive_rename.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Project 2A - MemeMe - Meme Editor.temp_caseinsensitive_rename.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF2A927F1BE98E58005AE710 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FF2A92811BE98E58005AE710 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FF2A92841BE98E58005AE710 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -46,7 +46,7 @@
 		FF2A927D1BE98E58005AE710 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				FF2A927C1BE98E58005AE710 /* Project 2A - MemeMe - Meme Editor.app */,
+				FF2A927C1BE98E58005AE710 /* Project 2A - MemeMe - Meme Editor.temp_caseinsensitive_rename.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -68,9 +68,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		FF2A927B1BE98E58005AE710 /* Project 2A - MemeMe - Meme Editor */ = {
+		FF2A927B1BE98E58005AE710 /* Project 2A - MemeMe - Meme Editor.temp_caseinsensitive_rename */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FF2A928E1BE98E58005AE710 /* Build configuration list for PBXNativeTarget "Project 2A - MemeMe - Meme Editor" */;
+			buildConfigurationList = FF2A928E1BE98E58005AE710 /* Build configuration list for PBXNativeTarget "Project 2A - MemeMe - Meme Editor.temp_caseinsensitive_rename" */;
 			buildPhases = (
 				FF2A92781BE98E58005AE710 /* Sources */,
 				FF2A92791BE98E58005AE710 /* Frameworks */,
@@ -80,9 +80,9 @@
 			);
 			dependencies = (
 			);
-			name = "Project 2A - MemeMe - Meme Editor";
+			name = "Project 2A - MemeMe - Meme Editor.temp_caseinsensitive_rename";
 			productName = "auto resize test";
-			productReference = FF2A927C1BE98E58005AE710 /* Project 2A - MemeMe - Meme Editor.app */;
+			productReference = FF2A927C1BE98E58005AE710 /* Project 2A - MemeMe - Meme Editor.temp_caseinsensitive_rename.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -97,6 +97,7 @@
 				TargetAttributes = {
 					FF2A927B1BE98E58005AE710 = {
 						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = 6PQM3VRV55;
 					};
 				};
 			};
@@ -113,7 +114,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				FF2A927B1BE98E58005AE710 /* Project 2A - MemeMe - Meme Editor */,
+				FF2A927B1BE98E58005AE710 /* Project 2A - MemeMe - Meme Editor.temp_caseinsensitive_rename */,
 			);
 		};
 /* End PBXProject section */
@@ -248,10 +249,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "auto resize test/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.zikursh.auto-resize-test";
-				PRODUCT_NAME = "Project 2A - MemeMe - Meme Editor";
+				PRODUCT_NAME = "Project 2A - MemeMe - Meme Editor.temp_caseinsensitive_rename";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -259,10 +263,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "auto resize test/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.zikursh.auto-resize-test";
-				PRODUCT_NAME = "Project 2A - MemeMe - Meme Editor";
+				PRODUCT_NAME = "Project 2A - MemeMe - Meme Editor.temp_caseinsensitive_rename";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -278,7 +285,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FF2A928E1BE98E58005AE710 /* Build configuration list for PBXNativeTarget "Project 2A - MemeMe - Meme Editor" */ = {
+		FF2A928E1BE98E58005AE710 /* Build configuration list for PBXNativeTarget "Project 2A - MemeMe - Meme Editor.temp_caseinsensitive_rename" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FF2A928F1BE98E58005AE710 /* Debug */,
