@@ -6,10 +6,10 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--MeeMe-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Project_2A___MemeMe___Meme_Editor_temp_caseinsensitive_rename" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="MeeMe" id="BYZ-38-t0r" customClass="ViewController" customModule="Project_2A___MemeMe___Meme_Editor_temp_caseinsensitive_rename" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
